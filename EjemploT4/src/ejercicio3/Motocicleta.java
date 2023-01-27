@@ -23,6 +23,10 @@ public class Motocicleta extends Vehiculos {
 	public String toString() {
 		return super.toString()+"Motocicleta [numRueda=" + numRueda + "]";
 	}
+	public double calcularCantidadFija(int op1,double por) {
+		double cien=100;
+		return super.calcularCantidadFija(op1,por)+(getCilindrada()*por/cien);
+	}
 	
 	
 	

@@ -52,6 +52,30 @@ public abstract class Vehiculos {
 				+ ", categoria=" + categoria + "]";
 	}
 	
+	public double calcularCantidadFija(int op1,double por ) {
+		
+		switch (op1) {
+		case 1:
+			categoria=100;
+			
+			break;
+		case 2:
+			categoria=150;
+			break;
+		case 3:
+			categoria=200;
+			break;
+		case 4:
+			categoria=250;
+			break;
+
+		default:
+			break;
+		}
+		return categoria;
+	}
+	
+	
 	
 	
 
