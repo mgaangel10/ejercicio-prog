@@ -15,23 +15,7 @@ public class Principal {
 		System.out.println("3---tipo b");
 		System.out.println("4---tipo c");
 		op1=Leer.datoInt();
-		switch (op1) {
-		case 1:
-			categoria=100;
-			break;
-		case 2:
-			categoria=150;
-			break;
-		case 3:
-			categoria=200;
-			break;
-		case 4:
-			categoria=1073;
-			break;
-
-		default:
-			break;
-		}
+		
 		Coches c=new Coches(1,200,100,categoria,true);
 		Motocicleta m= new Motocicleta(1,150,150,categoria,2);
 		Furgonetas f=new Furgonetas(1,300,100,categoria,120);
@@ -51,7 +35,7 @@ public class Principal {
 			break;
 		case 3:
 			System.out.println("su impuesto es de:");
-			
+			 
 			break;
 
 		default:

@@ -22,6 +22,10 @@ public class Furgonetas extends Vehiculos{
 		return super.toString()+"Furgonetas [tara=" + tara + "]";
 	}
 	
+	//reescribir metodo de la clase vehiculo
+	
+	
+	
 	
 	
 	
