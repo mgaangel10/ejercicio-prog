@@ -24,6 +24,13 @@ public class Oficina {
 		
 		return total;
 	}
+	public double  sumarTodo() {
+		double total=0.0;
+		for (int i = 0; i < lista.length && lista[i] !=null; i++ ) {
+			total+=lista[i].calcularPago();
+		}
+		return total;
+	}
 	
 	public double calcularSueldo(int posicion) {
 		return lista[posicion].calcularPago();

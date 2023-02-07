@@ -21,6 +21,8 @@ public class Principal {
 		System.out.println(of.calcularSueldo(2));		
 		System.out.println(of.calcularSueldo(3));
 		of.imprimirCuentas();
+		System.out.println("supuestamenta este es el total de todas de las cuentas");
+		System.out.println(of.sumarTodo());
 		
 
 	}
