@@ -10,7 +10,7 @@ public class Gerente extends Empleado {
 	}
 	
 	public double calcularSueldo() {
-		return super.getSueldoBase()-impuesto;
+		return super.calcularSueldo()-impuesto;
 	}
 
 	public int getImpuesto() {

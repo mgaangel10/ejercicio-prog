@@ -1,6 +1,6 @@
 package ejercicio5;
 
-public abstract class Empleado {
+public  class Empleado {
 	
 	private String nombre;
 	private String aplleido;
@@ -15,7 +15,9 @@ public abstract class Empleado {
 		this.numEmp = numEmp;
 	}
 	
-	public abstract double calcularSueldo();
+	public  double calcularSueldo() {
+	return getSueldoBase();	
+	}
 	
 	
 	

@@ -2,6 +2,8 @@ package ejercicio5;
 
 import java.util.Arrays;
 
+
+
 public class Oficina {
 	
 	private Empleado lista [];
@@ -15,12 +17,36 @@ public class Oficina {
 		return e.calcularSueldo();
 	}
 	
-	public double sumarSueldos() {
+	public double sumarSueldos(int numEmp) {
 		double total=0.0;
-		for (int i = 0; i < lista.length; i++) {
+		if (findByIdV2(numEmp)>0) {
+			for (int i = 0; i < lista.length; i++) {
 			total=total+calcularSueldoDeUnEmpleado(lista[i]);
 		}
+		}
+		
 		return total;
+	}
+	public double calcularSueldo(int javiMeGustas) {
+		return lista[javiMeGustas].calcularSueldo();
+	}
+	
+	//find
+	public int findByIdV2(int numEmp) {
+		int i = 0;
+		boolean encontrado = false;
+
+		while (i < lista.length && !encontrado) {
+			Empleado deLista = lista[i];
+			if (deLista.getNumEmp()==numEmp)
+				encontrado = true;
+			else
+				i++;
+		}
+		if (encontrado)
+			return i;
+		else
+			return -1;
 	}
 	//añadir
 	

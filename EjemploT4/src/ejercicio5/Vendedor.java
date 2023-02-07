@@ -12,15 +12,14 @@ public class Vendedor extends Empleado {
 	}
 	
 	
-	
-	public double calcularSueldo(Empleado e) {
+	public double calcularSueldo() {
 		double total=0.0,total1=0.0;
 		if (cantVent>5) {
 			total=cantVent*icentivo;
-			total1=e.getSueldoBase()+total;
-			return total;
+			total1=super.calcularSueldo()+total;
+			return total1;
 		} else {
-			return e.getSueldoBase();
+			return super.getSueldoBase();
 		}
 		
 	}
@@ -45,12 +44,7 @@ public class Vendedor extends Empleado {
 
 
 
-	@Override
-	public double calcularSueldo() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
+		
 	
 	
 	
