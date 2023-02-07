@@ -2,6 +2,9 @@ package ejercicio4;
 
 import java.util.Arrays;
 
+import ejercicioGym.Cliente;
+
+
 public class Venta {
 	
 	private Producto [] lista;
@@ -18,6 +21,46 @@ public class Venta {
 	public double calcularPrecio(int posi) {
 		return lista[posi].calcularPrecio();
 	}
+	
+	public void imprimirRop() {
+		Ropa aux;
+		for (int i = 0; i < lista.length; i++) {
+			if (lista[i] instanceof Ropa) {
+				
+				System.out.println(lista[i]);
+				
+			}
+		}
+	}
+	
+	//find
+	public Producto buscarPorclient(String nombre) {
+		int i= 0;
+		boolean encontrado =false;
+		while (i<lista.length && !encontrado) {
+			Producto delista=lista[i];
+			if (delista.getNombre().equalsIgnoreCase(nombre)) {
+				encontrado=true;
+			} else {
+				i++;
+			}
+		}
+		if (encontrado) {
+			return lista[i];
+		}else {
+			return null;
+		}
+	}
+	
+	//imprimir producto
+	public void darbaj(String nombre) {
+		Producto index=buscarPorclient(nombre);
+		if (index!=null) {
+			
+			lista[index];
+		}
+	}
+
 	
 	
 

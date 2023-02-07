@@ -21,7 +21,7 @@ public class Ropa extends Producto{
 			return super.getPrecioUni();
 		}
 	}
-
+	
 	public boolean isLujosa() {
 		return lujosa;
 	}
