@@ -24,6 +24,7 @@ public class Principal {
 		System.out.println(lista[1].calcularSueldo());
 		
 		
+		
 //	entra 100%
 //		dentro del metodo
 //		Alimentacion aux
