@@ -59,7 +59,7 @@ public class Oficina implements IEstadisticas{
 	//entra 100% lo que hace es buscar las cuentas que tiene  mayor saldo dde 100 creo
 	@Override
 	public Cuentas[] bucarSaldoMayorQue(double tope) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub si no tiene te paso el ejercicio ?y lo ves queme voy a iur a comerenga te lo paso ya
 		Cuentas [] aux = new Cuentas [lista.length];
 		
 		for (int i = 0; i < lista.length && lista[i]!=null; i++) {

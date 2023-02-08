@@ -2,7 +2,7 @@ package ejercicio4;
 
 import java.util.Arrays;
 
-import ejercicioGym.Cliente;
+
 
 
 public class Venta {
@@ -52,14 +52,14 @@ public class Venta {
 		}
 	}
 	
+	//esto es mio espera un momento
+	
 	//imprimir producto
-	public void darbaj(String nombre) {
-		Producto index=buscarPorclient(nombre);
-		if (index!=null) {
-			
-			lista[index];
-		}
+	
+	public void impirmirBuscado(String nombre) {
+		System.out.println(buscarPorclient(nombre));
 	}
+	
 
 	
 	
