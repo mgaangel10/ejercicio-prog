@@ -2,7 +2,7 @@ package ejercicio6;
 
 import java.util.Arrays;
 
-public class Oficina {
+public class Oficina implements IEstadisticas{
 	
 	private Cuentas [] lista;
 
@@ -55,6 +55,19 @@ public class Oficina {
 	@Override
 	public String toString() {
 		return "Oficina [lista=" + Arrays.toString(lista) + "]";
+	}
+	//entra 100% lo que hace es buscar las cuentas que tiene  mayor saldo dde 100 creo
+	@Override
+	public Cuentas[] bucarSaldoMayorQue(double tope) {
+		// TODO Auto-generated method stub
+		Cuentas [] aux = new Cuentas [lista.length];
+		
+		for (int i = 0; i < lista.length && lista[i]!=null; i++) {
+			if (lista[i].getSaldo()>tope) {
+				aux[i]=lista[i];
+			}
+		}
+		return aux;
 	}
 	
 	

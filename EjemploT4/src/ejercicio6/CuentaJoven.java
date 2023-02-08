@@ -65,7 +65,7 @@ public class CuentaJoven extends Cuentas {
 
 	@Override
 	public String toString() {
-		return "CuentaJoven [masEuro=" + masEuro + ", ingresar=" + ingresar + "]";
+		return super.toString()+"CuentaJoven [masEuro=" + masEuro + ", ingresar=" + ingresar + "]";
 	}
 	
 	
