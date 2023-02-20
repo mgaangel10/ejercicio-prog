@@ -14,7 +14,7 @@ public class Principal {
 		double dinero;
 		List <Socio> listaSocio=new ArrayList <Socio>();
 		Crud crud = new Crud (listaSocio);
-		GestionClub clb = new GestionClub("La riberrilla",3,crud,10000);
+		GestionClub clb = new GestionClub("La riberrilla",crud,10000);
 		
 		do {
 			System.out.println("1--añadir");
