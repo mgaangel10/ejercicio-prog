@@ -1,6 +1,8 @@
 package ejemplocomparator;
 
-public class ComprobarPorMarca {
+import java.util.Comparator;
+
+public class ComprobarPorMarca implements Comparator <Corredor> {
 	
 	public int compare(Corredor c1,Corredor c2) {
 		double marca1=c1.getMarca();
