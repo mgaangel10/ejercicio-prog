@@ -16,7 +16,7 @@ public class DatosPersonal implements Comparable <DatosPersonal> {
 	public int compareTo(DatosPersonal c1) {
 		String nombre1=c1.getNombre();
 		String nombre2=this.getNombre();
-		return (nombre1.toLowerCase().compareTo(nombre2.toLowerCase()));
+		return -(nombre1.toLowerCase().compareTo(nombre2.toLowerCase()));
 	}
 	
 	
